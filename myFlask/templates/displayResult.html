@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <h1>Recommended Recipes:</h1>
+      {% for key, value in my_dict.items() %}
+        <li>{{ key }}</li>
+        <li>{{ value }}</li>
+        <br><br><br>
+      {% endfor %}
+  </body>
+</html>

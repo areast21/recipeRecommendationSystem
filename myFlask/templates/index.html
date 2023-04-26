@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome to Recipe Recommender</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Courier;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: url("C://myFlask//templates//french-breakfast-2.jpg") no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-top: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    button {
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      background-color: #5cb85c;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #449d44;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="image" style="background:url(C://myFlask//templates//french-breakfast-2.jpg) center / cover no-repeat;"></div>
+  <h1>Welcome to Recipe Recommender System!</h1>
+  <p>Discover your new favorite recipe with our recommendation system. Simply input your preferences and dietary
+    requirements, and let our advanced algorithm create a personalized list of delicious and healthy recipes for you to
+    try. Say goodbye to the hassle of meal planning and hello to tasty, easy-to-make meals!</p>
+  <button onclick="location.href='/queryInputForm'">Get Started</button>
+</body>
+
+</html>

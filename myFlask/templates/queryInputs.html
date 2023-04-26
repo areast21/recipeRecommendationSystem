@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <style>
+    body {
+      font-family: Courier;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    form {
+      border: 1px solid black;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #eaf7d5;
+    }
+
+    form label {
+      display: inline-block;
+      width: 150px;
+      text-align: right;
+      margin-right: 10px;
+    }
+
+    form input[type="text"] {
+      width: 250px;
+    }
+
+    .disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="text-align:center">
+    <form action="/displayResults" method="post">
+      <label for="ingredient1">Choice 1:</label>
+      <input type="text" id="ingredient1" name="ingredient1" placeholder="Pass in any Ingredient,"><br><br>
+
+      <label for="ingredient2">Choice 2:</label>
+      <input type="text" id="ingredient2" name="ingredient2" placeholder="And we'll do our best"><br><br>
+
+      <label for="ingredient3">Choice 3:</label>
+      <input type="text" id="ingredient3" name="ingredient3" placeholder="to get you the best recipes!"><br><br>
+
+      <input type="checkbox" name="rankedDisplaySelection" value="true"> Prefer ranked retrieval?
+      <input type="submit" value="Submit" id="submit-btn" class="disabled" disabled>
+    </form>
+  </div>
+
+  <script>
+    const inputFields = document.querySelectorAll('form input[type="text"]');
+    const submitButton = document.getElementById('submit-btn');
+
+    function checkInputs() {
+      let filledInputs = 0;
+      for (let i = 0; i < inputFields.length; i++) {
+        if (inputFields[i].value !== '') {
+          filledInputs++;
+        }
+      }
+      if (filledInputs > 0) {
+        submitButton.classList.remove('disabled');
+        submitButton.removeAttribute('disabled');
+      } else {
+        submitButton.classList.add('disabled');
+        submitButton.disabled = true;
+      }
+    }
+
+    inputFields.forEach(input => {
+      input.addEventListener('input', checkInputs);
+    });
+  </script>
+</body>
+
+</html>
