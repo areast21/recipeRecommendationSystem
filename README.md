@@ -4,7 +4,7 @@ README File - Recipe Recommender System
 -Link to the Github Repo for the Flask web app
 	https://github.com/areast21/recipeRecommendationSystem/tree/main
 	
--App hosted at 
+-App is hosted at 
     http://recor3.pythonanywhere.com/
 
 -*NOTE* Please make sure that you have the following python libraries installed before running the flask web app:
