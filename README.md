@@ -3,6 +3,7 @@ README File - Recipe Recommender System
 
 -Link to the Github Repo for the Flask web app
 	https://github.com/areast21/recipeRecommendationSystem/tree/main
+	
 -App hosted at 
     http://recor3.pythonanywhere.com/
 
@@ -20,6 +21,7 @@ README File - Recipe Recommender System
 -Refer the IR.ipynb file for the dataset preparation steps. It also involves few sample queries.
 
 -The role of the flask app is to obtain the inputs from the client side and toss them into the backend (simply the querying algorithm which has access to the finalCleanedDataSet.csv).
+
 -*NOTE* To run the IR.ipynb file you must download additional python libraries:
     1. re
     2. spacy
@@ -33,7 +35,7 @@ README File - Recipe Recommender System
     10. matplotlib
     11. itertools
 
--****Running the IR.ipynb file is not required to run the flask application. myFlask is standalone****
+-****Running the IR.ipynb file is not required to run the flask application. myFlask is a standalone app.****
 
 -Repository contributors: Adithya Ramesh, Darshan Swami, Parth Jay Dhruv, Sidhanth Jain
 -Project submitted as part of the course "Information Retrieval" - Spring 2023 - Worcester Polytechnic Institute, MA, USA
